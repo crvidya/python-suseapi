@@ -13,5 +13,6 @@ script:
   - pep8 suseapi
   - pylint --reports=n --rcfile=pylint.rc suseapi || true
   - pyflakes suseapi
+  
 after_success:
   - coveralls
